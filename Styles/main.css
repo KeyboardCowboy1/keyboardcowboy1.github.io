@@ -1,13 +1,96 @@
 body {
-   display: block;
-   margin: 0;
-}
-
-#wrapper {
-    
-}
-
-.section {
+    display: block;
+    margin: 0;
+    background-color: #212121;
+    color: #a1a1a1;
+ }
  
-}
-
+ /* #wrapper {
+ 
+ } */
+ 
+ #title {
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+ 
+ .pageHeader {
+     display: block;
+     font-family: 'Oswald', sans-serif;
+     font-size: 8em;
+     text-align: center;
+     letter-spacing: .30em;
+     margin: 0;
+ }
+ 
+ .subHeader {
+     display: block;
+     font-family: 'Oswald', sans-serif;
+     font-size: 2em;
+     text-align: center;
+     letter-spacing: .35em;
+     margin: 0;
+ }
+ 
+ .section {
+     width: 100%;
+     padding: 3em 0 3em 0;
+ }
+ 
+ .sectionHeader {
+     font-family: 'Oswald', sans-serif;
+     font-size: 5em;
+     text-align: center;
+     letter-spacing: .20em;
+     margin: 0;
+ }
+ 
+ /* ABOUT **********************************/
+ #about {
+     background-color: #005532;
+ }
+ 
+ /* DESIGN *********************************/
+ #design {
+     background-color: #8f0000;
+ }
+ 
+ /* DEVELOPMENT ****************************/
+ #development {
+     background-color: #004666;
+ }
+ 
+ 
+ /* SCROLL BAR *****************************/
+ 
+ ::-webkit-scrollbar {
+   width: 9px;
+   height: 9px;
+ }
+ ::-webkit-scrollbar-button {
+   width: 0px;
+   height: 0px;
+ }
+ ::-webkit-scrollbar-thumb {
+   background: #a1a1a1;
+ }
+ ::-webkit-scrollbar-thumb:hover {
+   background: #005532;
+ }
+ ::-webkit-scrollbar-thumb:active {
+   background: #005532;
+ }
+ ::-webkit-scrollbar-track {
+   background: #212121;
+ }
+ ::-webkit-scrollbar-track:hover {
+   background: #212121;
+ }
+ ::-webkit-scrollbar-track:active {
+   background: #212121;
+ }
+ ::-webkit-scrollbar-corner {
+   background: transparent;
+ }
+ 
+ 
