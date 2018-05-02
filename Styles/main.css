@@ -1,13 +1,10 @@
+ /* GLOBAL **********************************/
 body {
     display: block;
     margin: 0;
     background-color: #212121;
     color: #a1a1a1;
  }
- 
- /* #wrapper {
- 
- } */
  
  #title {
      margin-top: 30px;
@@ -53,7 +50,50 @@ body {
  /* DESIGN *********************************/
  #design {
      background-color: #8f0000;
+     overflow: auto;
  }
+#galleryContainer {
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+}
+ .gallery {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.gallery div {
+  position: relative;
+  float: left;
+  padding: 1%;
+  width: 23%;
+}
+
+.gallery div img {
+  display: block;
+  max-width: 100%;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery div:hover {
+  z-index: 1;
+}
+
+.gallery div:hover img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
  
  /* DEVELOPMENT ****************************/
  #development {
