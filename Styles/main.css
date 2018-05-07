@@ -1,17 +1,33 @@
- /* GLOBAL **********************************/
+/* GLOBAL **********************************/
+
+/* palette
+  grey #212121
+  red #8f0000
+  blue #004666
+  green #005532
+*/
+
+:root {
+  --main-bg: #005532;
+  --design: #212121;
+  --development: #313131;
+  --about: #212121;
+  --font: #d1d1d1;
+}
+
 body {
     display: block;
     margin: 0;
-    background-color: #212121;
-    color: #a1a1a1;
+    background-color: var(--main-bg);
+    color: var(--font);
  }
  
- #title {
+#title {
      margin-top: 30px;
      margin-bottom: 30px;
  }
  
- .pageHeader {
+.pageHeader {
      display: block;
      font-family: 'Oswald', sans-serif;
      font-size: 8em;
@@ -20,7 +36,7 @@ body {
      margin: 0;
  }
  
- .subHeader {
+.subHeader {
      display: block;
      font-family: 'Oswald', sans-serif;
      font-size: 2em;
@@ -29,12 +45,12 @@ body {
      margin: 0;
  }
  
- .section {
+.section {
      width: 100%;
      padding: 3em 0 3em 0;
  }
  
- .sectionHeader {
+.sectionHeader {
      font-family: 'Oswald', sans-serif;
      font-size: 5em;
      text-align: center;
@@ -42,21 +58,19 @@ body {
      margin: 0;
  }
  
- /* ABOUT **********************************/
- #about {
-     background-color: #005532;
- }
- 
+
  /* DESIGN *********************************/
- #design {
-     background-color: #8f0000;
+#design {
+     background-color: var(--design);
      overflow: auto;
  }
+
 #galleryContainer {
   padding-top: 7vh;
-  padding-bottom: 7vh;
+  padding-bottom: 10vh;
 }
- .gallery {
+
+.gallery {
   width: 80%;
   margin: 0 auto;
   padding: 5px;
@@ -97,8 +111,13 @@ body {
  
  /* DEVELOPMENT ****************************/
  #development {
-     background-color: #004666;
+     background-color: var(--development);
  }
+
+/* ABOUT **********************************/
+#about {
+  background-color: var(--about);
+}
  
  
  /* SCROLL BAR *****************************/
@@ -112,7 +131,7 @@ body {
    height: 0px;
  }
  ::-webkit-scrollbar-thumb {
-   background: #a1a1a1;
+   background: #d1d1d1;
  }
  ::-webkit-scrollbar-thumb:hover {
    background: #005532;
