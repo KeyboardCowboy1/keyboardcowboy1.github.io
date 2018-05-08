@@ -14,8 +14,8 @@ function genRandomGradient() {
     var colOne = "RGB(" + [Math.floor(256 * Math.random())] + "," + [Math.floor(256 * Math.random())] + "," + [Math.floor(256 * Math.random())] + ")"
       , colTwo = "RGB(" + [Math.floor(256 * Math.random())] + "," + [Math.floor(256 * Math.random())] + "," + [Math.floor(256 * Math.random())] + ")"
       , gradientString = "linear-gradient(" + angle + "deg," + colOne + "," + colTwo + ")"
-      , gradOutput = "<div id='gradient-info'>" + colOne + "<br>" + colTwo + "<br><span>Angle: " + angle + "&deg;</span></div>";
-      
+      , gradOutput = "<div id='gradient-info'>" + colOne + "<br>" + colTwo + "<br><span>ANGLE: " + angle + "&deg;</span></div>";
+
     document.getElementById("generatedSwatch").style.background = gradientString,
     document.getElementById("generatedValues").innerHTML = gradOutput;
 }
