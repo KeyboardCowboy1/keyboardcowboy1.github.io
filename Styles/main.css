@@ -20,12 +20,12 @@ body {
     margin: 0;
     background-color: var(--main-bg);
     color: var(--font);
- }
+}
  
 #title {
      margin-top: 30px;
      margin-bottom: 30px;
- }
+}
  
 .pageHeader {
      display: block;
@@ -34,7 +34,7 @@ body {
      text-align: center;
      letter-spacing: .30em;
      margin: 0;
- }
+}
  
 .subHeader {
      display: block;
@@ -43,12 +43,12 @@ body {
      text-align: center;
      letter-spacing: .35em;
      margin: 0;
- }
+}
  
 .section {
      width: 100%;
      padding: 3em 0 3em 0;
- }
+}
  
 .sectionHeader {
      font-family: 'Oswald', sans-serif;
@@ -56,14 +56,38 @@ body {
      text-align: center;
      letter-spacing: .20em;
      margin: 0;
- }
+}
+
+h4 {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+}
+
+h5 {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 1.6em;
+  margin: 0;
+  text-align: center;
+}
+
+P {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 1em;
+  margin: 0;
+  text-align: center;
+}
  
 
  /* DESIGN *********************************/
 #design {
-     background-color: var(--design);
-     overflow: auto;
- }
+  background-color: var(--design);
+  overflow: auto;
+}
 
 #galleryContainer {
   padding-top: 7vh;
@@ -110,9 +134,60 @@ body {
 }
  
  /* DEVELOPMENT ****************************/
- #development {
+#development {
      background-color: var(--development);
- }
+     overflow: auto;
+}
+
+#devLeft {
+  width: 49%;
+  float: left;
+  height: 60vh;
+}
+
+#swatch {
+  padding-top: 3vh;
+}
+
+#generatedSwatch {
+  margin: 0 auto;
+  height: 30vh;
+  width: 30vh;
+  background-color: #fff;
+}
+
+#swatchControls {
+  width: 30vh;
+  margin: 0 auto;
+}
+
+.swatchBtn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  color: #ffffff;
+  background: #474747;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  border: none;
+  width: 47%;
+  margin: 1%;
+}
+
+.swatchBtn:hover {
+  background: #212121;
+  text-decoration: none;
+}
+
+#devRight {
+  width: 49%;
+  float: right;
+  height: 60vh;
+}
+
+#projects {
+  padding-top: 3vh;
+}
 
 /* ABOUT **********************************/
 #about {
@@ -122,34 +197,42 @@ body {
  
  /* SCROLL BAR *****************************/
  
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
    width: 9px;
    height: 9px;
- }
- ::-webkit-scrollbar-button {
+}
+
+::-webkit-scrollbar-button {
    width: 0px;
    height: 0px;
- }
- ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
    background: #d1d1d1;
- }
- ::-webkit-scrollbar-thumb:hover {
+}
+
+::-webkit-scrollbar-thumb:hover {
    background: #005532;
- }
+}
+
  ::-webkit-scrollbar-thumb:active {
    background: #005532;
- }
- ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
    background: #212121;
- }
- ::-webkit-scrollbar-track:hover {
+}
+
+::-webkit-scrollbar-track:hover {
    background: #212121;
- }
- ::-webkit-scrollbar-track:active {
+}
+
+::-webkit-scrollbar-track:active {
    background: #212121;
- }
- ::-webkit-scrollbar-corner {
+}
+
+::-webkit-scrollbar-corner {
    background: transparent;
- }
+}
  
  
