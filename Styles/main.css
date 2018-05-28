@@ -65,6 +65,7 @@ h4 {
   font-size: 2em;
   margin: 0;
   text-align: center;
+  padding-bottom: 3vh;
 }
 
 h5 {
@@ -76,10 +77,13 @@ h5 {
 }
 
 P {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Glegoo', serif;
   color: #fff;
   font-size: 1em;
   margin: 0;
+}
+
+.centerText {
   text-align: center;
 }
  
@@ -91,8 +95,8 @@ P {
 }
 
 #galleryContainer {
-  padding-top: 7vh;
-  padding-bottom: 10vh;
+  padding-top: 9vh;
+  padding-bottom: 17vh;
 }
 
 .gallery {
@@ -120,7 +124,7 @@ P {
 }
 
 .gallery div:hover img {
-  transform: scale(1.7,1.7);
+  transform: scale(2, 2); /*1.7, 1.7*/
   transition: .3s transform;
 }
 
@@ -140,6 +144,11 @@ P {
      overflow: auto;
 }
 
+#devContainer {
+  overflow: auto;
+  padding-top: 7vh;
+}
+
 #devLeft {
   width: 49%;
   float: left;
@@ -147,7 +156,7 @@ P {
 }
 
 #swatch {
-  padding-top: 3vh;
+  /*padding-top: 3vh;*/
 }
 
 #generatedSwatch {
@@ -155,6 +164,10 @@ P {
   height: 30vh;
   width: 30vh;
   background-color: #fff;
+}
+
+#generatedValues {
+  height: 56px;
 }
 
 #swatchControls {
@@ -173,6 +186,7 @@ P {
   border: none;
   width: 47%;
   margin: 1%;
+
 }
 
 .swatchBtn:hover {
@@ -187,12 +201,33 @@ P {
 }
 
 #projects {
-  padding-top: 3vh;
+  /*padding-top: 3vh;*/
 }
 
 /* ABOUT **********************************/
 #about {
   background-color: var(--about);
+}
+
+#aboutContainer {
+  padding-top: 7vh;
+  display: flex;
+}
+
+#aboutText {
+  margin-left: 2em;
+  margin-right: 2em;
+  flex: 1;
+}
+
+#aboutPics {
+  flex: 1;
+}
+
+#aboutPics img {
+  display: block;
+  max-width: 70%;
+  margin: 0 auto;
 }
  
  
