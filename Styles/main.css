@@ -137,6 +137,20 @@ P {
 .cf:after {
   clear: both;
 }
+
+#vidContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+}
+
+iframe {
+  flex: 1;
+  height: 40vh;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
  
  /* DEVELOPMENT ****************************/
 #development {
@@ -310,6 +324,17 @@ P {
     margin: 0;
   }
 
+  #vidContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  iframe {
+    flex: 1;
+    height: 35vh;
+  }
+
 
 }
 
@@ -406,6 +431,17 @@ P {
   .gallery div:hover img {
     transform: scale(1.5, 1.5); /*1.7, 1.7*/
     transition: .3s transform;
+  }
+
+  #vidContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  iframe {
+    flex: 1;
+    height: 45vh;
   }
 
 
