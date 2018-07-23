@@ -243,6 +243,13 @@ iframe {
   flex: 1;
 }
 
+.textContainer {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
 #aboutPics {
   flex: 1;
 }
@@ -252,7 +259,13 @@ iframe {
   max-width: 70%;
   margin: 0 auto;
 }
- 
+
+/* FOOTER **********************************/
+ #footnote {
+   padding-top: 2em;
+   padding-bottom: 2em;
+ }
+
  
  /* SCROLL BAR *****************************/
  
@@ -342,6 +355,10 @@ iframe {
   iframe {
     flex: 1;
     height: 35vh;
+  }
+
+  .textContainer {
+    max-width: 70%;
   }
 
 
@@ -498,6 +515,10 @@ iframe {
   
   .centerText {
     text-align: center;
+  }
+
+  .textContainer {
+    max-width: 80%;
   }
 
 
