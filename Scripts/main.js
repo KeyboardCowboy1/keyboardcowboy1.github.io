@@ -22,6 +22,7 @@ function genRandomColor() {
     document.getElementById("generatedSwatch").style.background = rgb;
     document.getElementById("generatedValues").innerHTML = rgb;
 }
+
 //Generated RGB values for a gradient and output in the swatch div
 function genRandomGradient() {
     var angle = Math.floor(181 * Math.random());
