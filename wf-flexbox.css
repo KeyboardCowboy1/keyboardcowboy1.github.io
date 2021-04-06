@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #fff; 
+}
+.mainContainer {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/*    -      COLUMN      -    */
+.column {
+    padding-top: 10%;
+    align-items: stretch;
+    box-shadow: 4px 2px 20px #000;
+}
+
+.column img {
+    display: flex;
+    max-width: 15%;
+    transition: 2.5s ease-out;
+}
+
+.column:hover img {
+    max-width: 40%;
+    align-items: center;
+    justify-content: center;
+    transition: 2.5s ease-out;
+}
+
+.column h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #000;
+    transition: 0.1s ease-out;
+}
+
+.column:hover h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #fff;
+    transition: 0.1s ease-out;
+}
+
+.column h3 {
+    display: none; 
+    font-size: 1.2em;
+    padding-bottom: 0px;
+}
+
+.column:hover h3 {
+    display: block;
+    margin-left: 50%;
+}
+
+.column p {
+    display: none;
+    line-height: 150%;
+}
+
+.column:hover p{
+    margin-top: 1em;
+    margin-left: 50%;
+    margin-right: 5%;
+    display: block;  
+}
+
+.wfabilities {
+    padding-top: 2em;
+    margin-left: 20%;
+}
+
+.wfabilities p {
+    font-size: 0.8em;
+}
+
+#one {
+    background-color: #c7c7c7;
+    flex: 1;
+    transition: all 2.5s;
+}
+
+#one:hover {
+    flex: 4;
+    background-color: #416b72;
+}
+
+#two {
+    background-color: #c7c7c7;
+    flex: 1;
+    transition: all 2.5s;
+}
+
+#two:hover {
+    flex: 4;
+    background-color: #8b0808;
+}
+
+#three {
+    background-color: #c7c7c7;
+    flex: 1;
+    transition: all 2.5s;
+}
+
+#three:hover {
+    flex: 4;
+    background-color: #6f9995;
+    
+}
+
+.wfimage {
+    max-width: 20%;
+    max-height: 80%;
+    position: absolute;
+    bottom: 0px;
+}
+
+/*  -   MEDIA QUERY FOR LRGE MOBILE / TABLETS  -   */
+
+@media screen and (max-width: 900px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+
+    .column img {
+        display: block;
+        max-width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 1.5s ease-out;
+    }
+    
+    .column:hover img {
+        max-width: 20%;
+        transition: 1.5s ease-out;
+    }
+
+    .column p {
+        display: none; 
+            
+    }
+    
+    .column:hover p{
+        display: none; 
+        line-height: 150%;
+        text-align: center;
+        margin-top: 0.5em;
+        display: block; 
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .wfimage {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .wfabilities {
+        display: none;
+    }
+
+    /*
+    #one {
+        margin-top: 4em;
+    } */
+
+
+}
+
+
+/*  -   MEDIA QUERY FOR MOBILE  -   */
+
+@media screen and (max-width: 480px) {
+
+    .mainContainer {
+        flex-direction: column;
+    }
+  
+    .column {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        transition: 1.5s ease-out;
+    }
+    
+    .column img {
+        display: block;
+        max-width: 20%;
+        transition: 1.5s ease-out;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .column:hover img {
+        max-width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 1.5s ease-out;
+    }
+    
+    .column h2 {
+        font-size: 2em;
+        text-align: center;
+        color: #000;
+        transition: 0.1s ease-out;
+    }
+    
+    .column:hover h2 {
+        font-size: 2.5em;
+        text-align: center;
+        color: #fff;
+        transition: 0.1s ease-out;
+    }
+    
+    .column p {
+        display: none;
+        line-height: 150%;
+        text-align: center;
+    }
+    
+    .column:hover p{
+        margin-top: 0.5em;
+        margin-left: 15%;
+        margin-right: 15%;
+        display: block;  
+    }
+    
+    .wfabilities {
+        display: none;
+    }
+
+    .wfimage {
+        position: relative;
+        bottom: 0px;
+    }
+
+    #one {
+        flex: 1;
+    }
+
+    #one:hover {
+        flex: 2;
+    }
+    
+    #two {
+        flex: 1;
+    }
+
+    #two:hover {
+        flex: 2;
+    }
+    
+    #three {
+        flex: 1;
+    }
+
+    #three:hover {
+        flex: 2;
+    }
+}
