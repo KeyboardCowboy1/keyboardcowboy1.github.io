@@ -90,6 +90,19 @@ P {
   margin: 0;
 }
 
+a {
+  font-family: 'Glegoo', serif;
+  color: var(--font);
+}
+
+a:hover {
+  color: var(--dark);
+}
+
+a:visited {
+  color: var(--darkgreen);
+}
+
 .centerText {
   text-align: center;
 }
@@ -100,11 +113,6 @@ P {
   background-color: var(--dark);
   overflow: auto;
 }
-
-/*
-#designContainer {
-}
-*/
 
 #galleryContainer {
   padding-top: 9vh;
@@ -181,9 +189,6 @@ iframe {
   height: 60vh;
 }
 
-#swatch {
-  /*padding-top: 3vh;*/
-}
 
 #generatedSwatch {
   margin: 0 auto;
@@ -226,9 +231,13 @@ iframe {
   height: 60vh;
 }
 
-#projects {
-  /*padding-top: 3vh;*/
+#devRight a {
+  display: block;
+  text-align: center;
 }
+
+
+
 
 /* ABOUT **********************************/
 #about {

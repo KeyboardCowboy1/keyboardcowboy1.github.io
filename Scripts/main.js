@@ -34,8 +34,6 @@ function genRandomGradient() {
 
     document.getElementById("generatedSwatch").style.background = gradientString,
     document.getElementById("generatedValues").innerHTML = gradOutput;
-
-
 }
 
 /*This section is for toggling the visibility of different divs */
